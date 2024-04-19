@@ -1,0 +1,95 @@
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\urlstyle{cyan}
+\hypersetup{urlcolor=cyan}
+\newcommand{\mysite}{www.github.com/natetheadequate}
+\newcommand{\myemail}{natewhite345@gmail.com}
+\newcommand{\link}[2]{\color{cyan}{\underline{\href{#1}{#2}}}}
+\newcommand{\headingcap}[1]{\space \space \space \textit{#1}}
+\newcommand{\ghlink}[1]{\href{https://www.github.com/natetheadequate/#1}{
+\faIcon{github}/#1}}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{p{5cm} @{\extracolsep{\fill}} p{5cm} @{\extracolsep{\fill}} r}
+  \href{https://www.github.com/natetheadequate}{\faIcon{github} natetheadequate} & \textbf{\Large Nathaniel White} & \href{mailto:\myemail}{\myemail{}} \\
+  \hline
+  \multicolumn{3}{c}{\rule{0pt}{1.5em}\color{Yellow4}\large\textit{Seeking a co-op for January 2023 -- June 2023}}
+\end{tabular*}\vspace*{-22pt}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+     \resumeSubheadingSummary{Northeastern University, Khoury College of Computer Sciences, Honors}{Boston, MA}{\BeginAccSupp{ActualText=Candidate for a Bachelor of Science in Computer Science and Mathematics}Candidate for a B.\,S. in Computer Science \& Mathematics\EndAccSupp{}\summarysep{} Physics Minor \summarysep{} 3.87 GPA}{Aug. 2021 -- Dec. 2025}
+    \resumeSubheadingSummary
+      {Holliston High School}{Holliston, MA}
+      { Track/XC \summarysep NHS \summarysep Science Olympiad \summarysep SAT: 1570 \summarysep National Merit Finalist}{Aug. 2017 -- May 2021}
+   \resumeSubHeadingListEnd
+
+\section{Computer Knowledge}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Web Dev}{React, MaterialUI, JavaScript, HTML/CSS, PHP, MySQL, 
+  REST API, Express, Jest, Node }
+  \resumeSubItem{Scientific Computing}{Lean (Formal Verification), Slurm/HPC, TensorFlow, \LaTeX, Schrodinger Maestro }
+  \resumeSubItem{General}{Java, Racket, Python, Linux, Bash, Git, C, Cuda, VEX RobotC, Git, Github, QtPy}
+  \resumeSubHeadingListEnd
+
+  \section{Coursework\small\headingcap{* := in progress}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{CS}
+      {Object Oriented Design, Algorithms, Networks and Distributed Systems*, Logic and Computation*}
+    \resumeSubItem{Math}
+      {Calculus 3, Linear Algebra, Probability \& Statistics, Statistics \& Stochastic Processes*, Group Theory*}
+    \resumeSubItem{Physics}{Physics 1, (Mechanics, Basic fluid dynamics), Physics 2 (Waves, Electricity, Magnetism)}
+  \resumeSubHeadingListEnd
+
+  \section{Projects\small\headingcap{* := in progress}}
+  \resumeSubHeadingListStart
+  \resumeSubheading{ML Excitation Model*}{Email for code}{Python, Maestro, MATLAB, Bash, TensorFlow}{Aug. 2022 -- Present}{Identify what aspects of chloramide, flavins, and styrene influence their excitation wavelengths when they are in proximity to each other. Have written a matlab/python script that transforms the raw coordinates of each atom into more usable and interpretable features, which then can be used as input for a neural network or rounded for use in a neural network to predict excitation wavelengths and strengths. }
+  \resumeSubheading{Automated Docker}{\ghlink{automated\_docking\_script}}{Python, Maestro, Slurm, QtPy}{July 2022}{Designed a GUI add-on and backend script for Schrodinger Maestro that automated a time-consuming and error-prone process of generating docking poses for three molecules in all permutations.}
+  \resumeSubheading{N-Bullets in Racket}{\ghlink{nbulletsrkt}}{Racket}{Apr. 2022}
+  {Rewrote a project for a Java-based course in Racket to compare the two languages. Racket was terser, easier to properly test, and (subjectively) more readable. Additional findings and opinions are in the README.}
+  \resumeSubheading{Grave Finder}{\ghlink{findagravemiddleborough.ml}}{ReactJS, PHP, MySQL, Cloudflare, cPanel, SSL}{Dec. 2020}{Website to view grave data for a local cemetery preservation nonprofit. Makes use of join tables, searching, filtering, React+MaterialUI forms, an administrator login with a cooldown period after too many login attempts. }
+  \resumeSubHeadingListEnd
+
+  \section{Research and Work}
+  \resumeSubHeadingListStart
+  \resumeSubheadingThin{Peer Tutoring}{Sep. 2022 -- Present}{Discrete, Fundies 1 \& 2, OOD, Algo, Phys 2, Calc 3, LinAlg, Prob \& Stats}
+  \resumeItemListStart
+    \resumeBullet{Demonstrate patience and professionalism with tutees having a variety of skill levels}
+    \resumeBullet{Generate new ways to explain content}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Sijia Dong Lab}{Dec. 2021 -- Present}{Computational chemistry research group}
+  \resumeItemListStart
+    \resumeBullet{Bypass time-consuming processes and calculations using automation scripts and ML}
+    \resumeBullet{Listen and understand technical constraints and communicate progress and possible avenues for progress}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Internship with Town of Holliston Director of Technology}{Nov. 2020 -- Feb. 2021, Apr. 2021 -- May 2021}{}
+  \resumeItemListStart
+    \resumeBullet{Implement proper settings and software on new desktops for various town departments such as the police and the senior center}
+    \resumeBullet{Resolve problems with phones, printers, and file storage for various town employees}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Kitchen Worker at Hannah BG Shaw Home for the Aged}{June 2020 -- Aug 2021}{Server, dishwasher \& cook} \resumeItemListStart
+  \resumeBullet{Fulfill resident requests in compliance with dietary restrictions}
+  \resumeBullet{Exhibit patience and communicate clearly in a fast-paced environment}
+  \resumeItemListEnd \resumeSubHeadingListEnd
+
+  \section{Interests and Other Skills} 
+  \resumeSubHeadingListStart
+    \item\small{B2 Proficiency in French \summarysep
+    Proofs\./\.logic \summarysep Climate emergency \summarysep Running \summarysep Amateur cooking  \summarysep Political economy }
+    \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
