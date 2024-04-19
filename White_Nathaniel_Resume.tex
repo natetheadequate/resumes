@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{accsupp}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[x11names]{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{pdfcomment}
+\usepackage[normalem]{ulem}
+\usepackage{dashrule}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\labelitemi}{\color{Green2}\boldmath$>$}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{SeaGreen4}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeBullet}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{c@{\extracolsep{\fill}} r }
+      \small\textbf{#1} \headingcap{#3} \ \ \ #2 &  \raggedleft\textit{\small #4} 
+    \end{tabular*}
+    \small#5
+}
+\newcommand{\resumeSubheadingOld}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} \headingcap{#3 \vspace{-2pt}} & #2  \\
+      \small#5 & \textit{\small #4} 
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingThin}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1:} #3 & \small\textit{#2} 
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingSummary}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \textit{\small #4}
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\summarysepalt}{ --$\bullet$-- }
+\newcommand{\summarysep}{ \textcolor{black!50}{$ \backslash \backslash $ }}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\urlstyle{cyan}
+\hypersetup{urlcolor=cyan}
+\newcommand{\mysite}{www.github.com/natetheadequate}
+\newcommand{\myemail}{natewhite345@gmail.com}
+\newcommand{\link}[2]{\color{cyan}{\underline{\href{#1}{#2}}}}
+\newcommand{\headingcap}[1]{\space $|$\space \space \textit{#1}}
+\newcommand{\ghlink}[1]{\href{https://www.github.com/natetheadequate/#1}{
+\faIcon{github}/#1}}
+\newcommand{\ttul}[1]{\bgroup\markoverwith{\textcolor{cyan}{\hdashrule[-0.8ex]{1mm}{0.1pt}{0.8pt}}}\ULon{#1}}
+\newcommand{\ctt}[2]{\pdftooltip{\ttul{#1}}{#2}}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r} \textbf{\Large Nathaniel White} & \href{mailto:\myemail}{\myemail{}}\\ \href{https://www.linkedin.com/in/natetheadequate}{\faIcon{linkedin}}
+\href{https://www.github.com/natetheadequate}{\faIcon{github}} natetheadequate & \href{tel:
++016173470084}{(617) 347-0084} \\ \end{tabular*}\vspace*{-10pt}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+     \resumeSubheadingSummary{Northeastern University \normalfont{$|$ Khoury College of Computer Sciences $|$ Honors}}{Boston, MA}{\BeginAccSupp{ActualText=Candidate for a Bachelor of Science in Computer Science and Mathematics}Candidate, B.\,S. Computer Science \& Mathematics\EndAccSupp{}\summarysep{} Physics \& Chemistry Minor \summarysep{} 3.89 GPA}{2021 -- 2025}
+    \resumeSubheadingSummary
+      {Holliston High School}{Holliston, MA}
+      { Track/XC \summarysep NHS \summarysep Science Olympiad \summarysep 1570 SAT \summarysep National Merit Finalist}{2017 -- 2021}
+   \resumeSubHeadingListEnd
+
+\section{Coursework and Knowledge\small\headingcap{* := in progress/learning}}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Proficient Languages}{\ctt{Typescript}{Language of major project I authored at Nth Cycle (LUCAS). I have 7 years of experience with Javascript and 2 years with Typescript.}, \ctt{MongoDB}{Made extensive use of MongoDB aggregations on my first co-op (See LUCAS project).}, \ctt{Python}{Used for scientific computing at Dong Lab as well as coding interviews, quick scripts, and part of Networks class}, \ctt{React}{6 months professional experience with modern (Hook-based) React making LUCAS}, 
+  \ctt{SQL}{Experience from a full-stack webapp made in high school}, \ctt{Java}{Two semesters of core CS classes taught in Java. Would be very excited to work in Kotlin.}, \ctt{Lean4}{Undoubtedly the most esoteric language on this list, LEAN is a pure functional language similar to Coq which is based on the Calculus of Inductive Constructions and the notion of theorems as functions and propositions as types (Curry-Howard Correspondence). This means properties of programs can be formally verified, allowing for the development of high-assurance software in a high level language.}, \ctt{Bash}{Used in Dong Lab extensively.}, \ctt{Linux}{Daily driver since high school. Also used in the context of HPC.}, \ctt{C}{Used in high school and as a part of NUCAR.}, \ctt{Mathematica}{Learned to overcome its flaws to be able to complete homeworks in Modern Physics without making math errors inherent with hand calculations.}}
+  \resumeSubItem{Familiar Languages}{\ctt{MATLAB}{Used in Dong Lab}, \ctt{Rust*}{No major projects, just familiarity from watching youtubers like No Boilerplate and Let's Get Rusty}, \ctt{Machine Learning*}{Used TensorFlow in Dong Lab, learning more deeply from Steve Brunton's Youtube channel}, \ctt{CUDA}{Used as a part of NUCAR}, \ctt{Slurm/HPC}{Used in NUCAR and Dong Lab}, \ctt{\LaTeX}{This resume, as well as coursework in Algorithms and Theory of Computation}, \ctt{Schrodinger Maestro}{Interacted with the Python wrapper and JobDJ for Automated Docker project}}
+    \resumeSubItem{CS}
+      {\ctt{Theory of Computation}{Introduces the theory behind computers and computing aimed at answering the question, “What are the capabilities and limitations of computers?” Covers automata theory, computability, and complexity. The automata theory portion includes finite automata, regular expressions, nondeterminism, nonregular languages, context-free languages, pushdown automata, and noncontext-free languages. The computability portion includes Turing machines, the Church-Turing thesis, decidable languages, and the Halting theorem. The complexity portion includes big-O and small-o notation, the classes P and NP, the P vs. NP question, and NP-completeness. }, \ctt{Logic \& Comp.}{Uses LEAN to prove termination, correctness, and safety of programs. Discusses notations used in logic, propositional and first order logic, logical inference, mathematical induction, and structural induction. }, 
+      \ctt{{Networks \& Distributed Systems}}{Projects included making a wordle guesser, FTP Client\& Server, Web Scraper, BGP implementation, TCP implemenation, and RAFT (Distibuted Key-Value protocol) implementation. I wrote the first three in Python, the Course website public at 3700.network}, \ctt{Algorithms}{Covered induction proofs, asymptotic notation, divide and conquer, greedy, dynamic programming, basic graph algorithsm}, \ctt{Object Oriented Design}{Made two multi-week projects in Java: An implementation of a marble solitaire game and an image manipulator. Source code available on request; not posted publicly for academic integrity reasons.}}
+    \resumeSubItem{Math}{
+      \ctt{Statistics \& Stochastic Processes}{The first part of the course covers classical procedures of statistics including the t-test, linear regression, and the chi-square test. The second part provides an introduction to stochastic processes with emphasis on Markov chains, random walks, and Brownian motion, with applications to modeling and finance. As a prerequisite, I took Probability and Statistics, which covered sample space; conditional probability and independence; discrete and continuous probability distributions for one and for several random variables; expectation; variance; special distributions including binomial, Poisson, and normal distributions; law of large numbers; and central limit theorem. Also introduces basic statistical theory including estimation of parameters, confidence intervals, and hypothesis testing. }, \ctt{Linear Algebra}{Uses the Gauss-Jordan elimination algorithm to analyze and find bases for subspaces such as the image and kernel of a linear transformation. Covers the geometry of linear transformations: orthogonality, the Gram-Schmidt process, rotation matrices, and least squares fit. Examines diagonalization and similarity, and the spectral theorem and the singular value decomposition. }, \ctt{Number Theory}{Modular arithmetic, Chinese Remainder Theorem, primitive roots, RSA, quadratic reciprocity, cyclotomic polynomials, and elementary elliptic curve cryptography}, \ctt{Group Theory}{Presents basic concepts and techniques of the group theory: symmetry groups, axiomatic definition of groups, important classes of groups (abelian groups, cyclic groups, additive and multiplicative groups of residues, and permutation groups), Cayley table, subgroups, group homomorphism, cosets, the Lagrange theorem, normal subgroups, quotient groups, and direct products. Studies structural properties of groups. }, \ctt{Calculus 3}{Multivariable Calculus}, 
+      \ctt{Diff. Eq.}{Studies ordinary differential equations, their applications, and techniques for solving them, Laplace transforms, and linear algebra. Topics include linear and nonlinear first- and second-order equations and applications include electrical and mechanical systems, forced oscillation, and resonance. Topics from linear algebra, such as matrices, row-reduction, vector spaces, and eigenvalues/eigenvectors, are developed and applied to systems of differential equations. }}
+    \resumeSubItem{Science}{\ctt{Organic Chemistry 1}{Introduces nomenclature, preparation, properties, stereochemistry, and reactions of common organic compounds. Presents correlations between the structure of organic compounds and their physical and chemical properties, and mechanistic interpretation of organic reactions. Includes chemistry of hydrocarbons and their functional derivatives.}, \ctt{Physical Chemistry}{Offers an in-depth survey of physical chemistry. Emphasizes applications in modern research, including examples from biochemistry. Topics include the laws of thermodynamics and their molecular interpretation; equilibrium in chemical and biochemical systems; molecular transport; kinetics, including complex enzyme mechanisms; and an introduction to spectroscopy and the underlying concepts of quantum chemistry. }, \ctt{Quantum Computation and Information}{Introduces the foundations of quantum computation and information, including finite dimensional quantum mechanics, gates and circuits, quantum algorithms, quantum noise, and error-correcting codes. }, \ctt{Modern Physics}{Covers special relativity, relativistic dynamics, wave-particle duality, uncertainty, history of atomic models, particle in a box, harmonic oscillators, solutions to Schrodinger's equation with steps and barriers, the hydrogen atom, fine structure, Zeeman effect, and spectral lines. Uses Mathematica to derive computational solutions. }}
+  \resumeSubHeadingListEnd
+
+  \section{Research and Work}
+  \resumeSubHeadingListStart
+  \resumeSubheadingThin{Computational Biochemistry Co-op @ Tessera Therapeutics}{Jan. 2024 -- June 2024}{Gene Rewriting}
+  \resumeItemListStart
+  \resumeBullet{Worked on the Protein and RNA Engineering team.}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Software Engineering Co-op @ Nth Cycle}{Jan. 2023 -- June 2023}{Metal Refining Startup}
+  \resumeItemListStart
+  \resumeBullet{Identified problems with data capture and analysis such as manually transcribing pdfs, siloed data analysis procedures, nonstandardized datasheets, and exclusively using Excel/paper. Designed and implemented a webapp (see LUCAS project) which used drag-and-drop libraries and MongoDB for a no-code solution. }
+  \resumeBullet{Fixed problems with internet, printers, laptops, AzureVPN and Remote Desktop in lieu of an IT department}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Peer Tutoring}{Sep. 2022 -- June 2023}{Discrete, Fundies 1 \& 2, OOD, Algo, Phys 2, Calc 3, LinAlg, Prob \& Stats}
+  \resumeItemListStart
+    \resumeBullet{Demonstrate patience and professionalism with tutees having a variety of skill levels. 164 hours total $\approx$ 4 hrs/wk}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Sijia Dong Lab}{Dec. 2021 -- Jan. 2023}{Computational
+  chemistry research group} \resumeItemListStart \resumeBullet{Used automation scripts and ML to investigate ligand-protein binding.}
+\resumeItemListEnd
+  \resumeSubheadingThin{Northeastern Undergrad Computer Architecture Research Group}{Nov. 2021 -- May 2022}{} \resumeItemListStart \resumeBullet{Learned C and beginner CUDA through programming challenges given by Prof. Kaeli}
+  \resumeItemListEnd
+  \resumeSubheadingThin{Internship with Town of Holliston Director of Technology}{Nov. 2020 -- Feb. 2021, Apr. 2021 -- May 2021}{}
+  \resumeItemListStart
+    \resumeBullet{Setup and resolve problems with phones, printers, desktops, software, and file storage for municipal departments}
+  \resumeItemListEnd \resumeSubHeadingListEnd
+
+  \section{Projects}%\small\headingcap{* := in progress}}
+  \resumeSubHeadingListStart \resumeSubheading{LUCAS}{\ghlink{lucas-demo-screenshots}}{ReactTS, MongoDB, Azure, \href{
+  https://rjsf-team.github.io/react-jsonschema-form/docs/}{\faIcon{link}RJSF}, \href{
+  https://developers.google.com/blockly}{\faIcon{link}Blockly }}{Feb. 2023 --
+  Jun. 2023}{Webapp which enabled drag-and-drop design of forms and data analysis pipelines and graphics. Enabled parsing of files output from a specific machine  to upload multiple documents with same metadata, dimensional analysis in pipelines, linking a sample to the other steps in its history, which could have both branching and merging, and the capability to make graphs and tables, all without (them) coding. \textit{Access to full demo site available on request. Written for Nth Cycle}}\resumeSubheading{ML Excitation Model}{}{Python, Maestro, MATLAB, Bash,
+  TensorFlow}{Aug. 2022 -- Jan. 2023}{Identify what aspects of chloramide,
+  flavins, and styrene influence their excitation wavelengths when they are in
+  proximity to each other. Have written a MATLAB/Python/bash script that transforms
+  the raw coordinates of each atom into more usable and interpretable features,
+  which then can be used as input for a neural network or rounded for use in a
+  neural network to predict excitation wavelengths and strengths. \textit{Completed as part of Sijia Dong Lab}}
+   \resumeSubheading{Automated
+  Docker}{\ghlink{automated\_docking\_script}}{Python, Maestro, Slurm,
+  QtPy}{July 2022}{Designed a GUI add-on and backend script for Schrodinger
+  Maestro that automated a time-consuming and error-prone process of generating
+  docking poses for three molecules in all permutations. \textit{Completed as
+  part of Sijia Dong Lab}}
+  \resumeSubheading{N-Bullets in Racket}{\ghlink{nbulletsrkt}}{Intermediate Student Language (Racket subset)}{Apr.
+  2022} {Rewrote a project for a Java-based course in Racket to compare the two
+  languages. Racket was terser, easier to properly test, and (subjectively) more
+  readable. Additional findings and opinions are in the README.}
+  \resumeSubheading{Grave Finder}{\ghlink{findagravemiddleborough.ml}}{ReactJS,
+  PHP, MySQL, Cloudflare, cPanel, SSL}{Dec. 2020}{Website to view grave data for
+  a local cemetery preservation nonprofit. Makes use of join tables, searching,
+  filtering, React+MaterialUI forms, an administrator login with a cooldown
+  period after too many login attempts. } \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
