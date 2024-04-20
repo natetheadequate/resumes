@@ -137,8 +137,9 @@
 \newcommand{\headingcap}[1]{\space $|$\space \space \textit{#1}}
 \newcommand{\ghlink}[1]{\href{https://www.github.com/natetheadequate/#1}{
 \faIcon{github}/#1}}
-\newcommand{\ttul}[1]{\bgroup\markoverwith{\textcolor{cyan}{\hdashrule[-0.8ex]{1mm}{0.1pt}{0.8pt}}}\ULon{#1}}
-\newcommand{\ctt}[2]{\pdftooltip{\ttul{#1}}{#2}}
+\newcommand{\ttul}[2]{\bgroup\markoverwith{\textcolor{cyan}{\hdashrule[-0.8ex]{1mm}{2.1pt}{1pt}}}\ULon{\href{#2}{#1}}}
+\newcommand{\ctt}[3][\#]{\pdftooltip{\ttul{#2}{#1}}{#3}}
+\newcommand{\csln}[1]{https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/\#:~:text=#1}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r} \textbf{\Large Nathaniel White} & \href{mailto:\myemail}{\myemail{}}\\ \href{https://www.linkedin.com/in/natetheadequate}{\faIcon{linkedin}}
@@ -147,7 +148,7 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-     \resumeSubheadingSummary{Northeastern University \normalfont{$|$ Khoury College of Computer Sciences $|$ Honors}}{Boston, MA}{\BeginAccSupp{ActualText=Candidate for a Bachelor of Science in Computer Science and Mathematics}Candidate, B.\,S. Computer Science \& Mathematics\EndAccSupp{}\summarysep{} Physics \& Chemistry Minor \summarysep{} 3.87 GPA}{2021 -- 2025}
+     \resumeSubheadingSummary{Northeastern University \normalfont{$|$ Khoury College of Computer Sciences $|$ Honors}}{Boston, MA}{\BeginAccSupp{ActualText=Candidate for a Bachelor of Science in Computer Science and Mathematics}Candidate, B.\,S. Computer Science \& Mathematics\EndAccSupp{}\summarysep{} Physics \& Chemistry Minor \summarysep{} 3.87 GPA}{2021 -- May 2025}
    \resumeSubHeadingListEnd
 
   \section{Research and Work \small\headingcap{* := Part-Time, $^\dag$ := Under Non-Disclosure Agreement}}
@@ -179,17 +180,16 @@
   \resumeSubHeadingListStart
   \resumeSubItem{Languages}{
     \ctt{Typescript}{Language of major project I authored at Nth Cycle (LUCAS). I have 7 years of experience with Javascript and 2 years with Typescript.}, 
-    \ctt{React}{6 months professional experience with modern (Hook-based)
-    React making LUCAS},
-    \ctt{Python}{Used for scientific computing at Tessera and the Sijia Dong Lab, as well as part of Networks class}, 
+    \ctt{React}{6 months professional experience from Nth Cycle as well as the Grave Finder project from high school.acrobat },
+    \ctt{Python}{Used for scientific computing at Tessera and the Sijia Dong Lab, as well as part of Networks class.}, 
     \ctt{MongoDB}{Made extensive use of MongoDB aggregations on my first co-op (See LUCAS project).}, 
     \ctt{Java}{Two semesters of core CS classes taught in Java. Would be very excited to work in Kotlin.}, 
     \ctt{Lean4}{Undoubtedly the most esoteric language on this list, LEAN is a pure functional language similar to Rocq (formerly Coq) which is based on the Calculus of Inductive Constructions and the notion of theorems as functions and propositions as types (Curry-Howard Correspondence). This means properties of programs can be formally verified, allowing for the development of high-assurance code, and one day maybe even practical use.},
-    \ctt{Bash}{Used in the Dong Lab extensively.},
+    \ctt{Bash}{Used in the Dong Lab extensively, and as part of my everyday life as a Linux user.},
     \ctt{Linux}{Daily driver since high school. Also used in the context of HPC and developing on WSL at work.},
     \ctt{C}{Used as a part of NUCAR.},
     \ctt{Mathematica}{Learned to overcome its flaws to be able to complete homeworks in Modern Physics and Physical Chemistry without making math errors inherent with hand calculations.},
-    \ctt{Rust*}{Will be using for Software Development class}
+    \ctt{Rust*}{Will be using for Software Development class. Really excited to have a language with strong typing -- I greatly enjoyed programming in Lean, which is basically a language that is \textit{just} a type system, but it will be nice to have a language like that which has practical application and a developed ecosystem.}
   }
     \resumeSubItem{CS}
       {
@@ -200,7 +200,12 @@
         \ctt{Logic \& Comp.}{Uses LEAN to prove termination, correctness, and safety of programs. Discusses notations used in logic, propositional and first order logic, logical inference, mathematical induction, and structural induction. },
       }
     \resumeSubItem{Math}{
-      \ctt{Statistics \& Stochastic Processes}{The first part of the course covers classical procedures of statistics including the t-test, linear regression, and the chi-square test. The second part provides an introduction to stochastic processes with emphasis on Markov chains, random walks, and Brownian motion, with applications to modeling and finance. As a prerequisite, I took Probability and Statistics, which covered sample space; conditional probability and independence; discrete and continuous probability distributions for one and for several random variables; expectation; variance; special distributions including binomial, Poisson, and normal distributions; law of large numbers; and central limit theorem. Also introduces basic statistical theory including estimation of parameters, confidence intervals, and hypothesis testing. }, \ctt{Linear Algebra}{Uses the Gauss-Jordan elimination algorithm to analyze and find bases for subspaces such as the image and kernel of a linear transformation. Covers the geometry of linear transformations: orthogonality, the Gram-Schmidt process, rotation matrices, and least squares fit. Examines diagonalization and similarity, and the spectral theorem and the singular value decomposition. }, \ctt{Number Theory}{Modular arithmetic, Chinese Remainder Theorem, primitive roots, RSA, quadratic reciprocity, cyclotomic polynomials, and elementary elliptic curve cryptography}, \ctt{Group Theory}{Presents basic concepts and techniques of the group theory: symmetry groups, axiomatic definition of groups, important classes of groups (abelian groups, cyclic groups, additive and multiplicative groups of residues, and permutation groups), Cayley table, subgroups, group homomorphism, cosets, the Lagrange theorem, normal subgroups, quotient groups, and direct products. Studies structural properties of groups. }, \ctt{Calculus 3}{Multivariable Calculus}, 
+      \ctt{Statistics \& Stochastic Processes}
+      {The first part of the course covers classical procedures of statistics including the t-test, linear regression, and the chi-square test. The second part provides an introduction to stochastic processes with emphasis on Markov chains, random walks, and Brownian motion, with applications to modeling and finance. As a prerequisite, I took Probability and Statistics, which covered sample space; conditional probability and independence; discrete and continuous probability distributions for one and for several random variables; expectation; variance; special distributions including binomial, Poisson, and normal distributions; law of large numbers; and central limit theorem. Also introduces basic statistical theory including estimation of parameters, confidence intervals, and hypothesis testing. }, 
+      \ctt{Linear Algebra}{Uses the Gauss-Jordan elimination algorithm to analyze and find bases for subspaces such as the image and kernel of a linear transformation. Covers the geometry of linear transformations: orthogonality, the Gram-Schmidt process, rotation matrices, and least squares fit. Examines diagonalization and similarity, and the spectral theorem and the singular value decomposition. }, 
+      \ctt{Number Theory}{Modular arithmetic, Chinese Remainder Theorem, primitive roots, RSA, quadratic reciprocity, cyclotomic polynomials, and elementary elliptic curve cryptography}, 
+      \ctt{Group Theory}{Presents basic concepts and techniques of the group theory: symmetry groups, axiomatic definition of groups, important classes of groups (abelian groups, cyclic groups, additive and multiplicative groups of residues, and permutation groups), Cayley table, subgroups, group homomorphism, cosets, the Lagrange theorem, normal subgroups, quotient groups, and direct products. Studies structural properties of groups. }, 
+      \ctt{Calculus 3}{Multivariable Calculus}, 
       \ctt{Diff. Eq.}{Studies ordinary differential equations, their applications, and techniques for solving them, Laplace transforms, and linear algebra. Topics include linear and nonlinear first- and second-order equations and applications include electrical and mechanical systems, forced oscillation, and resonance. Topics from linear algebra, such as matrices, row-reduction, vector spaces, and eigenvalues/eigenvectors, are developed and applied to systems of differential equations. }}
     \resumeSubItem{Chemistry}
     {
@@ -211,7 +216,7 @@
     }
     \resumeSubItem{Physics}{
       \ctt{Quantum Computation and Information}{Introduces the foundations of quantum computation and information, including finite dimensional quantum mechanics, gates and circuits, quantum algorithms, quantum noise, and error-correcting codes. },
-      \ctt{Electronics Lab*}{},
+      \ctt{Electronics*}{Covers the physics underlying computers and our modern electronic world. Focuses on principles of semiconductor devices (diodes, transistors, integrated circuits, LEDs, photovoltaics); analog techniques (amplification, AC circuits, resonance); digital techniques (binary numbers, NANDs, logic gates, and circuits); electronic subsystems (operational amplifiers, magnetoelectronics, optoelectronics); and understanding commercial electronic equipment. Lab experiments are designed to investigate the properties of discrete and integrated devices and use them to design and build circuits.},
       \ctt{Modern Physics}{Covers special relativity, relativistic dynamics, wave-particle duality, uncertainty, history of atomic models, particle in a box, harmonic oscillators, solutions to Schrodinger's equation with steps and barriers, the hydrogen atom, fine structure, Zeeman effect, and spectral lines. Uses Mathematica to derive computational solutions. }
     }
   \resumeSubHeadingListEnd
